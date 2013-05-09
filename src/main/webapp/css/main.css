@@ -17,6 +17,15 @@
 	width: 960px;
 }
 
+.sidebar {
+	width: 16%; 
+	margin: 0 2%;
+}
+
+.content {
+	width: 80%; 
+}
+
 .news-main {
 	width: 720px;
 	margin: auto;

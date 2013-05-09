@@ -12,12 +12,12 @@
 		<div hflex="1" class="menu lastchild">Support</div>
 	</hlayout>
 	<columnlayout sclass="body">
-		<columnchildren width="16%" style="margin: 0 2%">
+		<columnchildren sclass="sidebar">
 			<include src="./listbox.zul" style="margin-bottom: 20px" />
 			<include src="./listbox.zul" style="margin-bottom: 20px" />
 			<include src="./listbox.zul" />
 		</columnchildren>
-		<columnchildren width="80%">
+		<columnchildren sclass="content">
 			<include id="in" src="./news.zul" />
 		</columnchildren>
 	</columnlayout>
