@@ -1,0 +1,31 @@
+<?link rel="stylesheet" type="text/css" href="css/main.css"?>
+
+<vlayout>
+	<hlayout sclass="header">
+		<div hflex="1" class="menu firstchild">ZK Store</div>
+		<div hflex="1" class="menu">3C</div>
+		<div hflex="1" class="menu">Clothes</div>
+		<div hflex="1" class="menu">Food</div>
+		<div hflex="1" class="menu">Shoe</div>
+		<div hflex="1" class="menu">Book</div>
+		<div hflex="1" class="menu">About us</div>
+		<div hflex="1" class="menu lastchild">Support</div>
+	</hlayout>
+	<columnlayout sclass="body">
+		<columnchildren width="16%" style="margin: 0 2%">
+			<include src="./listbox.zul" style="margin-bottom: 20px" />
+			<include src="./listbox.zul" style="margin-bottom: 20px" />
+			<include src="./listbox.zul" />
+		</columnchildren>
+		<columnchildren width="80%">
+			<include id="in" src="./news.zul" />
+		</columnchildren>
+	</columnlayout>
+	<div sclass="footer">
+		<html>
+			<hr />
+		</html>
+		©2013 Potix,Inc | Contact ZK | Security Policy | Site Map |
+		Terms of Use | Privacy Policy | Sales and Refunds
+	</div>
+</vlayout>

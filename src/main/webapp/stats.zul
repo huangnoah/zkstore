@@ -1,0 +1,247 @@
+<zk>
+	<grid vflex="1" style="margin-bottom: 10px">
+		<columns menupopup="auto">
+			<column label="Age" sort="auto" />
+			<column label="Category" sort="auto" />
+			<column label="Trade rate" sort="auto" />
+			<column label="Satisfaction" sort="auto" />
+		</columns>
+		<rows>
+			<row>
+				<label value="16" />
+				<label value="3C" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="24" />
+				<label value="3C" />
+				<label value="Processing" />
+				<label value="Bad" />
+			</row>
+			<row>
+				<label value="42" />
+				<label value="Clothes" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="36" />
+				<label value="Food" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="27" />
+				<label value="3C" />
+				<label value="Processing" />
+				<label value="Normal" />
+			</row>
+			<row>
+				<label value="31" />
+				<label value="Book" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="14" />
+				<label value="Clothes" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="17" />
+				<label value="3C" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="48" />
+				<label value="Food" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+			<row>
+				<label value="32" />
+				<label value="Food" />
+				<label value="Fail" />
+				<label value="Normal" />
+			</row>
+			<row>
+				<label value="11" />
+				<label value="Clothes" />
+				<label value="OK" />
+				<label value="Bad" />
+			</row>
+			<row>
+				<label value="60" />
+				<label value="Book" />
+				<label value="OK" />
+				<label value="Best" />
+			</row>
+		</rows>
+	</grid>
+	<hlayout>
+		<hlayout hflex="1">
+			<grid hflex="1">
+				<columns>
+					<column label="Age Stats" width="75px" />
+				</columns>
+				<rows>
+					<row>
+						<label id="c0" value="0~18" />
+						<doublebox id="v0" value="21"
+							constraint="no empty" onChange="updateAgechart(0)" />
+					</row>
+					<row>
+						<label id="c1" value="18~40" />
+						<doublebox id="v1" value="10"
+							constraint="no empty" onChange="updateAgechart(1)" />
+					</row>
+					<row>
+						<label id="c2" value="40~" />
+						<doublebox id="v2" value="40"
+							constraint="no empty" onChange="updateAgechart(2)" />
+					</row>
+				</rows>
+			</grid>
+			<flashchart id="agechart" hflex="2" height="250"
+				type="pie">
+				<zscript><![CDATA[
+	void updateAgechart(int rowIndex) {
+		Label lb = (Label) self.getFellow("c" + rowIndex);
+		Doublebox db = (Doublebox) self.getFellow("v" + rowIndex);
+		agemodel.setValue(lb.value, new Double(db.getValue().doubleValue()));
+	}
+	PieModel agemodel = new SimplePieModel();
+	for (int j = 0; j < 3; ++j) {
+		updateAgechart(j);
+	}
+	agechart.setModel(agemodel);
+]]>
+		</zscript>
+			</flashchart>
+			<grid hflex="1">
+				<columns>
+					<column label="Category" width="75px" />
+				</columns>
+				<rows>
+					<row>
+						<label id="l0" value="3C" />
+						<doublebox id="s0" value="30"
+							constraint="no empty" onChange="updateCategorychart(0)" />
+					</row>
+					<row>
+						<label id="l1" value="Clothes" />
+						<doublebox id="s1" value="20"
+							constraint="no empty" onChange="updateCategorychart(1)" />
+					</row>
+					<row>
+						<label id="l2" value="Food" />
+						<doublebox id="s2" value="10"
+							constraint="no empty" onChange="updateCategorychart(2)" />
+					</row>
+				</rows>
+			</grid>
+			<flashchart id="categorychart" hflex="2" height="250"
+				type="column">
+				<zscript><![CDATA[
+	void updateCategorychart(int rowIndex) {
+		Label lb = (Label) self.getFellow("l" + rowIndex);
+		Doublebox db = (Doublebox) self.getFellow("s" + rowIndex);
+		categorymodel.setValue(lb.value, lb.value, new Double(db.getValue()
+				.doubleValue()));
+	}
+	CategoryModel categorymodel = new SimpleCategoryModel();
+	for (int j = 0; j < 3; ++j) {
+		updateCategorychart(j);
+	}
+	categorychart.setModel(categorymodel);
+]]>
+		</zscript>
+			</flashchart>
+		</hlayout>
+	</hlayout>
+	<hlayout>
+		<hlayout hflex="1">
+			<grid hflex="1">
+				<columns>
+					<column label="Trade rate" width="75px" />
+				</columns>
+				<rows>
+					<row>
+						<label id="a0" value="OK" />
+						<doublebox id="b0" value="80"
+							constraint="no empty" onChange="updateTradechart(0)" />
+					</row>
+					<row>
+						<label id="a1" value="Processing" />
+						<doublebox id="b1" value="12"
+							constraint="no empty" onChange="updateTradechart(1)" />
+					</row>
+					<row>
+						<label id="a2" value="Fail" />
+						<doublebox id="b2" value="2"
+							constraint="no empty" onChange="updateTradechart(2)" />
+					</row>
+				</rows>
+			</grid>
+			<flashchart id="tradechart" hflex="2" height="250"
+				type="bar">
+				<zscript><![CDATA[
+	void updateTradechart(int rowIndex) {
+		Label lb = (Label) self.getFellow("a" + rowIndex);
+		Doublebox db = (Doublebox) self.getFellow("b" + rowIndex);
+		trademodel.setValue(lb.value, lb.value, new Double(db.getValue()
+				.doubleValue()));
+	}
+	SimpleCategoryModel trademodel = new SimpleCategoryModel();
+	for (int j = 0; j < 3; ++j) {
+		updateTradechart(j);
+	}
+	tradechart.setModel(trademodel);
+]]>
+		</zscript>
+			</flashchart>
+			<grid hflex="1">
+				<columns>
+					<column label="Satisfaction" width="75px" />
+				</columns>
+				<rows>
+					<row>
+						<label id="e0" value="Best" />
+						<doublebox id="f0" value="27"
+							constraint="no empty" onChange="updateSatisfactionchart(0)" />
+					</row>
+					<row>
+						<label id="e1" value="Normal" />
+						<doublebox id="f1" value="2"
+							constraint="no empty" onChange="updateSatisfactionchart(1)" />
+					</row>
+					<row>
+						<label id="e2" value="Bad" />
+						<doublebox id="f2" value="1"
+							constraint="no empty" onChange="updateSatisfactionchart(2)" />
+					</row>
+				</rows>
+			</grid>
+			<flashchart id="satisfactionchart" hflex="2" height="250"
+				type="line">
+				<zscript><![CDATA[
+	void updateSatisfactionchart(int rowIndex) {
+		Label lb = (Label) self.getFellow("e" + rowIndex);
+		Doublebox db = (Doublebox) self.getFellow("f" + rowIndex);
+		satisfactionmodel.setValue(lb.value, lb.value, new Double(db.getValue()
+				.doubleValue()));
+	}
+	CategoryModel satisfactionmodel = new SimpleCategoryModel();
+	for (int j = 0; j < 3; ++j) {
+		updateSatisfactionchart(j);
+	}
+	satisfactionchart.setModel(satisfactionmodel);
+]]>
+		</zscript>
+			</flashchart>
+		</hlayout>
+	</hlayout>
+</zk>

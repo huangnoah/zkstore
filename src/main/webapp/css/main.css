@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+.header {
+	height: 100px;
+	width: 960px;
+	margin: 28px auto;
+}
+
+.body {
+	width: 1440px;
+	margin: auto;
+}
+
+.footer {
+	height: 50px;
+	margin:  auto;
+	width: 960px;
+}
+
+.news-main {
+	width: 720px;
+	margin: auto;
+}
+
+.float-img {
+	margin: 5px; 
+	float: left;
+}
+
+.menu {
+	background-color: rgba(107, 107, 107, 1);
+	padding: 5px;
+	height: 26px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.menu span {
+	font-size: 14px;
+	color: white;
+}
+
+.menu.firstchild {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.menu.lastchild {
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.item .buy {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 3px;
+}
+
+li {
+	float: left;
+	margin: 10px 50px 10px 50px;
+}
+
+.items {
+	float: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}

@@ -1,0 +1,23 @@
+<listbox>
+	<listitem>
+		<listcell label="News" onClick='in.src="news.zul"'></listcell>
+	</listitem>
+	<listitem>
+		<listcell label="Shop" onClick='in.src="shop5.zul"'></listcell>
+	</listitem>
+	<listitem>
+		<listcell label="Stats" onClick='in.src="stats.zul"'></listcell>
+	</listitem>
+	<listitem>
+		<listcell label="..." onClick='in.src="news.zul"'></listcell>
+	</listitem>
+	<listitem>
+		<listcell label="..." onClick='in.src="news.zul"'></listcell>
+	</listitem>
+	<listitem>
+		<listcell label="..." onClick='in.src="news.zul"'></listcell>
+	</listitem>
+	<listitem>
+		<listcell label="..." onClick='in.src="news.zul"'></listcell>
+	</listitem>
+</listbox>

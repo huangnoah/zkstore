@@ -1,0 +1,160 @@
+<zk xmlns:h="xhtml">
+	<vlayout sclass="news-main">
+		<div>
+			<h:h1 style="font-size: 64px; text-align:center">
+				ZK Pivottable
+			</h:h1>
+		</div>
+		<image width="720px"
+			src="img/top_bannerimage_pivottable.png">
+		</image>
+	</vlayout>
+	<div>
+		<hlayout hflex="1">
+			<div hflex="2">
+				<vlayout hflex="1">
+					<div>
+						<h:h1>Marketing stuff!</h:h1>
+						<h:img src="img/top_bannerimage_spreadsheet.png" class="float-img" />
+						<h:p>
+							Cras justo odio, dapibus ac facilisis in,
+							egestas eget quam. Fusce dapibus, tellus ac
+							cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Fusce dapibus, tellus
+							ac cursus commodo, tortor mauris condimentum
+							nibh, ut fermentum massa justo sit amet
+							risus.
+
+						</h:p>
+					</div>
+					<hlayout hflex="1">
+						<div hflex="1">
+							<h:h2>Heading</h:h2>
+							<h:p>
+								Donec id elit non mi porta gravida at
+								eget metus. Fusce dapibus, tellus ac
+								cursus commodo, tortor mauris
+								condimentum nibh, ut fermentum massa
+								justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec
+								sed odio dui. Donec id elit non mi porta
+								gravida at eget metus. Fusce dapibus,
+								tellus ac cursus commodo, tortor mauris
+								condimentum nibh, ut fermentum massa
+								justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec
+								sed odio dui.
+							</h:p>
+						</div>
+						<div hflex="1">
+							<h:h2>Heading</h:h2>
+							<h:p>
+								Donec id elit non mi porta gravida at
+								eget metus. Fusce dapibus, tellus ac
+								cursus commodo, tortor mauris
+								condimentum nibh, ut fermentum massa
+								justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec
+								sed odio dui. Donec id elit non mi porta
+								gravida at eget metus. Fusce dapibus,
+								tellus ac cursus commodo, tortor mauris
+								condimentum nibh, ut fermentum massa
+								justo sit amet risus. Etiam porta sem
+								malesuada magna mollis euismod. Donec
+								sed odio dui.
+							</h:p>
+						</div>
+					</hlayout>
+				</vlayout>
+			</div>
+			<vlayout hflex="1">
+				<div vflex="1">
+					<h:h2>Ad</h:h2>
+					<h:img
+						src="img/top_bannerimage_spreadsheet.png"
+						class="float-img" width="150px" />
+					<h:p>
+						Donec id elit non mi porta gravida at eget
+						metus. Fusce dapibus, tellus ac cursus commodo,
+						tortor mauris condimentum nibh, ut fermentum
+						massa justo sit amet risus. Etiam porta sem
+						malesuada magna mollis euismod. Donec sed odio
+						dui.
+					</h:p>
+				</div>
+				<div vflex="1">
+					<h:h2>Ad</h:h2>
+					<h:img
+						src="img/top_bannerimage_spreadsheet.png"
+						class="float-img" width="150px" />
+					<h:p>
+						Donec id elit non mi porta gravida at eget
+						metus. Fusce dapibus, tellus ac cursus commodo,
+						tortor mauris condimentum nibh, ut fermentum
+						massa justo sit amet risus. Etiam porta sem
+						malesuada magna mollis euismod. Donec sed odio
+						dui.
+					</h:p>
+				</div>
+				<div vflex="1">
+					<h:h2>Ad</h:h2>
+					<h:img
+						src="img/top_bannerimage_spreadsheet.png"
+						class="float-img" width="150px" />
+					<h:p>
+						Donec id elit non mi porta gravida at eget
+						metus. Fusce dapibus, tellus ac cursus commodo,
+						tortor mauris condimentum nibh, ut fermentum
+						massa justo sit amet risus. Etiam porta sem
+						malesuada magna mollis euismod. Donec sed odio
+						dui.
+					</h:p>
+				</div>
+				<div vflex="1">
+					<h:h2>Ad</h:h2>
+					<h:img
+						src="img/top_bannerimage_spreadsheet.png"
+						class="float-img" width="150px" />
+					<h:p>
+						Donec id elit non mi porta gravida at eget
+						metus. Fusce dapibus, tellus ac cursus commodo,
+						tortor mauris condimentum nibh, ut fermentum
+						massa justo sit amet risus. Etiam porta sem
+						malesuada magna mollis euismod. Donec sed odio
+						dui.
+					</h:p>
+				</div>
+			</vlayout>
+		</hlayout>
+	</div>
+</zk>
