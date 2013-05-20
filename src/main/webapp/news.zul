@@ -58,25 +58,7 @@
 						</h:p>
 					</div>
 					<hlayout hflex="1">
-						<div hflex="1">
-							<h:h2>Heading</h:h2>
-							<h:p>
-								Donec id elit non mi porta gravida at
-								eget metus. Fusce dapibus, tellus ac
-								cursus commodo, tortor mauris
-								condimentum nibh, ut fermentum massa
-								justo sit amet risus. Etiam porta sem
-								malesuada magna mollis euismod. Donec
-								sed odio dui. Donec id elit non mi porta
-								gravida at eget metus. Fusce dapibus,
-								tellus ac cursus commodo, tortor mauris
-								condimentum nibh, ut fermentum massa
-								justo sit amet risus. Etiam porta sem
-								malesuada magna mollis euismod. Donec
-								sed odio dui.
-							</h:p>
-						</div>
-						<div hflex="1">
+						<div hflex="1" forEach="1, 2">
 							<h:h2>Heading</h:h2>
 							<h:p>
 								Donec id elit non mi porta gravida at
@@ -98,49 +80,7 @@
 				</vlayout>
 			</div>
 			<vlayout hflex="1">
-				<div vflex="1">
-					<h:h2>Ad</h:h2>
-					<h:img
-						src="img/top_bannerimage_spreadsheet.png"
-						class="float-img" width="150px" />
-					<h:p>
-						Donec id elit non mi porta gravida at eget
-						metus. Fusce dapibus, tellus ac cursus commodo,
-						tortor mauris condimentum nibh, ut fermentum
-						massa justo sit amet risus. Etiam porta sem
-						malesuada magna mollis euismod. Donec sed odio
-						dui.
-					</h:p>
-				</div>
-				<div vflex="1">
-					<h:h2>Ad</h:h2>
-					<h:img
-						src="img/top_bannerimage_spreadsheet.png"
-						class="float-img" width="150px" />
-					<h:p>
-						Donec id elit non mi porta gravida at eget
-						metus. Fusce dapibus, tellus ac cursus commodo,
-						tortor mauris condimentum nibh, ut fermentum
-						massa justo sit amet risus. Etiam porta sem
-						malesuada magna mollis euismod. Donec sed odio
-						dui.
-					</h:p>
-				</div>
-				<div vflex="1">
-					<h:h2>Ad</h:h2>
-					<h:img
-						src="img/top_bannerimage_spreadsheet.png"
-						class="float-img" width="150px" />
-					<h:p>
-						Donec id elit non mi porta gravida at eget
-						metus. Fusce dapibus, tellus ac cursus commodo,
-						tortor mauris condimentum nibh, ut fermentum
-						massa justo sit amet risus. Etiam porta sem
-						malesuada magna mollis euismod. Donec sed odio
-						dui.
-					</h:p>
-				</div>
-				<div vflex="1">
+				<div vflex="1" forEach="1, 2, 3, 4">
 					<h:h2>Ad</h:h2>
 					<h:img
 						src="img/top_bannerimage_spreadsheet.png"

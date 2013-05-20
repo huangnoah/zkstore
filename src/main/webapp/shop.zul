@@ -1,118 +1,19 @@
-<html>
-	<div class="items">
-		<h2>Items</h2>
-		<hr />
-		<ul>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
+<zk xmlns:h="xhtml">
+	<div class="items" forEach="1,2,3,4,5">
+		<h:h2>Items</h:h2>
+		<h:hr />
+		<hlayout forEach="1,2">
+			<div class="item" forEach="1,2,3,4,5">
+				<a href="http://www.zkoss.org/product/zk">
+					<image src="img/top_bannerimage_spreadsheet.png"
+						width="120px" />
+					<div class="item-name">ZK spreadsheet</div>
+				</a>
+				<div class="info">
 					<span class="price">Price: 16000</span>
 					<span class="buy">Buy</span>
 				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-			<li>
-				<div class="item">
-					<a href="http://www.zkoss.org/product/zk">
-						<img src="img/top_bannerimage_spreadsheet.png"
-							width="120px" />
-						<h4>ZK spreadsheet</h4>
-					</a>
-					<span class="price">Price: 16000</span>
-					<span class="buy">Buy</span>
-				</div>
-			</li>
-		</ul>
+			</div>
+		</hlayout>
 	</div>
-</html>
+</zk>

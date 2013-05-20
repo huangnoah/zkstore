@@ -13,17 +13,17 @@
 
 .footer {
 	height: 50px;
-	margin:  auto;
+	margin: auto;
 	width: 960px;
 }
 
 .sidebar {
-	width: 16%; 
+	width: 16%;
 	margin: 0 2%;
 }
 
 .content {
-	width: 80%; 
+	width: 80%;
 }
 
 .news-main {
@@ -32,7 +32,7 @@
 }
 
 .float-img {
-	margin: 5px; 
+	margin: 5px;
 	float: left;
 }
 
@@ -64,21 +64,26 @@
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 5px;
-	padding: 3px;
+	padding: 2px 3px;
 }
 
-li {
+.item {
 	float: left;
 	margin: 10px 50px 10px 50px;
 }
 
-.items {
-	float: none;
+.item-name span {
+	font-size: 18px;
 }
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: auto;
+.info {
+	margin: 7px
+}
+
+.z-label {
+	font-size: 14px;
+}
+
+.items {
+	float: none;
 }

@@ -3,7 +3,7 @@
 		<listcell label="News" onClick='in.src="news.zul"'></listcell>
 	</listitem>
 	<listitem>
-		<listcell label="Shop" onClick='in.src="shop5.zul"'></listcell>
+		<listcell label="Shop" onClick='in.src="shop.zul"'></listcell>
 	</listitem>
 	<listitem>
 		<listcell label="Stats" onClick='in.src="stats.zul"'></listcell>
