@@ -16,7 +16,7 @@
 			<row>
 				<label value="24" />
 				<label value="3C" />
-				<label value="Processing" />
+				<label value="Ing" />
 				<label value="Bad" />
 			</row>
 			<row>
@@ -34,7 +34,7 @@
 			<row>
 				<label value="27" />
 				<label value="3C" />
-				<label value="Processing" />
+				<label value="Ing" />
 				<label value="Normal" />
 			</row>
 			<row>
@@ -175,7 +175,7 @@
 							constraint="no empty" onChange="updateTradechart(0)" />
 					</row>
 					<row>
-						<label id="a1" value="Processing" />
+						<label id="a1" value="Ing" />
 						<doublebox id="b1" value="12"
 							constraint="no empty" onChange="updateTradechart(1)" />
 					</row>
